@@ -1,0 +1,40 @@
+{
+  "name": "dercoder/omnipay-accentpay",
+  "type": "library",
+  "description": "AccentPay gateway for Omnipay payment processing library",
+  "keywords": [
+    "gateway",
+    "merchant",
+    "omnipay",
+    "pay",
+    "payment",
+    "accentpay",
+    "purchase"
+  ],
+  "homepage": "https://github.com/dercoder/omnipay-paykasa",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alexander Fedra",
+      "email": "alexander.fedra@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Omnipay\\AccentPay\\": "src/"
+    }
+  },
+  "require": {
+    "omnipay/common": "^2.3",
+    "devcookies/signgen": "^1.0"
+  },
+  "require-dev": {
+    "omnipay/tests": "~2.0",
+    "satooshi/php-coveralls": "1.0.0"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.x-dev"
+    }
+  }
+}
