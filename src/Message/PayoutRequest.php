@@ -82,8 +82,6 @@ class PayoutRequest extends AbstractRequest
             'Content-Type' => 'application/json',
         );
 
-        var_dump($uri, $data);
-
         try {
             $response = $this->httpClient->post($uri, $headers, $data)->send();
         } catch (BadResponseException $e) {
