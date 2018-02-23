@@ -6,7 +6,6 @@ use Omnipay\Common\AbstractGateway;
 use Omnipay\Common\Message\AbstractRequest;
 use Omnipay\AccentPay\Message\PurchaseRequest;
 use Omnipay\AccentPay\Message\CompletePurchaseRequest;
-use Omnipay\AccentPay\Message\FetchTransactionRequest;
 use Omnipay\AccentPay\Message\PayoutRequest;
 
 /**
@@ -97,16 +96,6 @@ class Gateway extends AbstractGateway
     public function completePurchase(array $parameters = array())
     {
         return $this->createRequest('\Omnipay\AccentPay\Message\CompletePurchaseRequest', $parameters);
-    }
-
-    /**
-     * @param array $parameters
-     *
-     * @return AbstractRequest|FetchTransactionRequest
-     */
-    public function fetchTransaction(array $parameters = array())
-    {
-        return $this->createRequest('\Omnipay\AccentPay\Message\FetchTransactionRequest', $parameters);
     }
 
     /**
